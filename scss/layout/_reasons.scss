@@ -1,0 +1,51 @@
+.second-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.icons-list {
+  display: flex;
+}
+
+.icons-box {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.icons-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.reasons-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.reasons-item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.reasons-item-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 10px;
+}
+
+.reasons-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}

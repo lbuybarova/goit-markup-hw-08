@@ -1,0 +1,28 @@
+//UTILES
+@import "./utiles/variables";
+@import "./utiles/visually-hidden";
+
+//BASE
+@import "./base/base";
+
+//COMPONENTS
+@import "./components/container";
+@import "./components/modal-btn";
+@import "./components/social-link";
+@import "./components/social-list";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/logo";
+@import "./components/section";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/reasons";
+@import "./layout/about";
+@import "./layout/workers";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/work-examples";
+@import "./layout/filters";
