@@ -155,92 +155,69 @@
       <section class="second-section">
         <div class="container">
           <h2 class="visually-hidden">Почему стоит выбрать нас</h2>
-          <ul class="icons-list">
-            <li class="icons-list-item">
+          <ul class="reasons-list">
+            <li class="reasons-list-item">
               <div class="icons-box">
                 <svg class="reasons-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="reasons-item-title">Внимание к деталям</h3>
-              <p class="reasons-item-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+              <div class="reasons-description">
+                <h3 class="reasons-title">Внимание к деталям</h3>
+                <p class="reasons-text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </div>
             </li>
-            <li class="icons-list-item">
+            <li class="reasons-list-item">
               <div class="icons-box">
                 <svg class="reasons-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="reasons-item-title">Пунктуальность</h3>
-              <p class="reasons-item-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
+              <div class="reasons-description">
+                <h3 class="reasons-title">Пунктуальность</h3>
+                <p class="reasons-text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </div>
             </li>
-            <li class="icons-list-item">
+            <li class="reasons-list-item">
               <div class="icons-box">
                 <svg class="reasons-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="reasons-item-title">Планирование</h3>
-              <p class="reasons-item-text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
+              <div class="reasons-description">
+                <h3 class="reasons-title">Планирование</h3>
+                <p class="reasons-text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </div>
             </li>
-            <li class="icons-list-item">
+            <li class="reasons-list-item">
               <div class="icons-box">
                 <svg class="reasons-icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="reasons-item-title">Современные технологии</h3>
-              <p class="reasons-item-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
+              <div class="reasons-description">
+                <h3 class="reasons-title">Современные технологии</h3>
+                <p class="reasons-text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </div>
             </li>
           </ul>
-
-          <!-- <ul class="reasons-list">
-            <li class="reasons-item">
-              <h3 class="reasons-item-title">Внимание к деталям</h3>
-              <p class="reasons-item-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="reasons-item">
-              <h3 class="reasons-item-title">Пунктуальность</h3>
-              <p class="reasons-item-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="reasons-item">
-              <h3 class="reasons-item-title">Планирование</h3>
-              <p class="reasons-item-text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="reasons-item">
-              <h3 class="reasons-item-title">Современные технологии</h3>
-              <p class="reasons-item-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul> -->
-        </div>
       </section>
       <!-- END REASONS SECTION -->
 
-      <!-- <section class="third-section">
+      <!-- START ABOUT SECTION -->
+      <section class="third-section">
         <div class="container">
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="about-list">
@@ -280,17 +257,40 @@
           </ul>
         </div>
       </section>
+     <!-- END ABOUT SECTION -->
+
+      <!-- START WORKERS SECTION -->
       <section class="fourth-section workers-section">
         <div class="container">
           <h2 class="workers-title">Наша команда</h2>
           <ul class="workers-list">
             <li class="workers-item">
-              <img
-                src="images/img-1.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-              />
+
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/igor-demyanenko-desktop.webp 1x, ./images/workers/igor-demyanenko-desktop@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/igor-demyanenko-desktop.jpg 1x, ./images/workers/igor-demyanenko-desktop@2x.jpg 2x">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/igor-demyanenko-tablet.webp 1x, ./images/workers/igor-demyanenko-tablet@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/igor-demyanenko-tablet.jpg 1x, ./images/workers/igor-demyanenko-tablet@2x.jpg 2x">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/igor-demyanenko-mobile.webp 1x, ./images/workers/igor-demyanenko-mobile@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/igor-demyanenko-mobile.jpg 1x, ./images/workers/igor-demyanenko-mobile@2x.jpg 2x">
+
+                <img src=" " alt="Фото Игоря Демьяненко">
+              </picture>
+              
               <div class="workers-item-description">
                 <h3 class="workers-item-title">Игорь Демьяненко</h3>
                 <p lang="en" class="workers-item-text">Product Designer</p>
@@ -327,15 +327,35 @@
               </div>
             </li>
             <li class="workers-item">
-              <img
-                src="images/img-2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/olga-repina-desktop.webp 1x, ./images/workers/olga-repina-desktop@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/olga-repina-desktop.jpg 1x, ./images/workers/olga-repina-desktop@2x.jpg 2x">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/olga-repina-tablet.webp 1x, ./images/workers/olga-repina-tablet@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/olga-repina-tablet.jpg 1x, ./images/workers/olga-repina-tablet@2x.jpg 2x">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/olga-repina-mobile.webp 1x, ./images/workers/olga-repina-mobile@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/olga-repina-mobile.jpg 1x, ./images/workers/olga-repina-mobile@2x.jpg 2x">
+
+                <img src=" " alt="Фото Ольги Репиной">
+              </picture>
+
               <div class="workers-item-description">
                 <h3 class="workers-item-title">Ольга Репина</h3>
                 <p lang="en" class="workers-item-text">Frontend Developer</p>
+
                 <ul class="social-list workers-social">
                   <li class="social-item">
                     <a href="" class="social-link">
@@ -369,12 +389,32 @@
               </div>
             </li>
             <li class="workers-item">
-              <img
-                src="images/img-3.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/nikolay-tarasov-desktop.webp 1x, ./images/workers/nikolay-tarasov-desktop@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/nikolay-tarasov-desktop.jpg 1x, ./images/workers/nikolay-tarasov-desktop@2x.jpg 2x">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/nikolay-tarasov-tablet.webp 1x, ./images/workers/nikolay-tarasov-tablet@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/nikolay-tarasov-tablet.jpg 1x, ./images/workers/nikolay-tarasov-tablet@2x.jpg 2x">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/nikolay-tarasov-mobile.webp 1x, ./images/workers/nikolay-tarasov-mobile@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/nikolay-tarasov-mobile.jpg 1x, ./images/workers/nikolay-tarasov-mobile@2x.jpg 2x">
+
+                <img src=" " alt="Фото Николая Тарасова">
+              </picture>
+
               <div class="workers-item-description">
                 <h3 class="workers-item-title">Николай Тарасов</h3>
                 <p lang="en" class="workers-item-text">Marketing</p>
@@ -411,12 +451,32 @@
               </div>
             </li>
             <li class="workers-item">
-              <img
-                src="images/img-4.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/mikhail-ermakov-desktop.webp 1x, ./images/workers/mikhail-ermakov-desktop@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" 
+                srcset="./images/workers/mikhail-ermakov-desktop.jpg 1x, ./images/workers/mikhail-ermakov-desktop@2x.jpg 2x">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/mikhail-ermakov-tablet.webp 1x, ./images/workers/mikhail-ermakov-tablet@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/workers/mikhail-ermakov-tablet.jpg 1x, ./images/workers/mikhail-ermakov-tablet@2x.jpg 2x">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/mikhail-ermakov-mobile.webp 1x, ./images/workers/mikhail-ermakov-mobile@2x.webp 2x"
+                type="image/webp">
+
+                <source media="(min-width: 480px)" 
+                srcset="./images/workers/mikhail-ermakov-mobile.jpg 1x, ./images/workers/mikhail-ermakov-mobile@2x.jpg 2x">
+
+                <img src=" " alt="Фото Михаила Ермакова">
+              </picture>
+
               <div class="workers-item-description">
                 <h3 class="workers-item-title">Михаил Ермаков</h3>
                 <p lang="en" class="workers-item-text">UI Designer</p>
@@ -455,7 +515,11 @@
           </ul>
         </div>
       </section>
-      <section class="fifth-section">
+      <!-- END WORKERS SECTION -->
+
+
+      <!-- START CLIENTS SECTION -->
+       <section class="fifth-section">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list">
@@ -503,7 +567,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      <!-- END CLIENTS SECTION -->
+
     </main>
 
     <!-- <footer class="footer">
@@ -667,6 +733,6 @@
       </div>
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

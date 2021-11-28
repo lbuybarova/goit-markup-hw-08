@@ -8,12 +8,12 @@
   }
 }
 
-.icons-list {
-  align-items: center;
-  justify-content: center;
+.reasons-list {
+  justify-content: space-evenly;
+  align-items: flex-start;
 
   @media screen and (min-width: 768px) {
-    // display: flex;
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -41,25 +41,44 @@
   }
 }
 
-.icons-list-item:not(:last-child) {
-  margin-right: 30px;
+.reasons-list-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+    margin-bottom: 40px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      max-width: 270px;
+    }
+  }
 }
 
-// .reasons-list {
-//   display: flex;
-//   justify-content: space-evenly;
-//   align-items: flex-start;
-// }
+.reasons-description {
+  width: 450px;
 
-// .reasons-item {
-//   width: 270px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 
-.reasons-item-title {
+.reasons-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -78,9 +97,9 @@
   }
 }
 
-// .reasons-item-text {
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-//   color: var(--primary-text-color);
-// }
+.reasons-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
