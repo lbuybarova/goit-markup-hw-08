@@ -1,7 +1,27 @@
 .filters-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: -15px;
+
+  @media screen and(min-width:768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filters-list-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and(max-width:767px) {
+    margin-top: 15px;
+  }
 }
 
 .filters-btn {
@@ -9,27 +29,19 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
-  margin-right: 8px;
-  padding: 6px 22px;
-  background-color: #f5f4fa;
-  border-color: #f5f4fa;
   border: 1px;
   border-radius: 4px;
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
-    box-shadow 250ms var(--cubic);
+  padding: 6px 22px;
+  color: var(--secondary-title-color);
+  background-color: #f5f4fa;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--primary-title-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);

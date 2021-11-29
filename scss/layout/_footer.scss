@@ -37,11 +37,19 @@
 }
 
 .contacts-adress {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts-list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address {
@@ -61,15 +69,42 @@
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and(min-width:768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0px;
+    text-align: start;
+  }
 }
 
-.footer-contacts {
-  margin-right: 70px;
+.footer-contacts-list {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin: 0px;
+    text-align: start;
+  }
 }
 
 .footer-socials {
-  align-items: baseline;
+  margin-bottom: 60px;
 }
 
 .connect-title {
@@ -122,11 +157,22 @@
 }
 
 .sign-box {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 166px;
+  }
 }
 
 .sign-form {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .sign-title {
@@ -141,14 +187,20 @@
 
 .sign-input {
   background-color: transparent;
-  min-width: 358px;
+  min-width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .sign-button {

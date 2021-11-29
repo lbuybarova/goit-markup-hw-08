@@ -39,7 +39,9 @@
               <a href="index.html" class="link main-nav__link">Студия</a>
             </li>
             <li class="main-nav__item">
-              <a href="portfolio.html" class="link main-nav__link current">Портфолио</a>
+              <a href="portfolio.html" class="link main-nav__link current"
+                >Портфолио</a
+              >
             </li>
             <li class="main-nav__item">
               <a href="" class="link main-nav__link">Контакты</a>
@@ -76,35 +78,91 @@
       <section class="portfolio-section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
+          <!-- START FILTERS BUTTON -->
           <ul class="filters-list">
-            <li>
+            <li class="filters-list-item">
               <button type="button" class="filters-btn">Все</button>
             </li>
-            <li>
+            <li class="filters-list-item">
               <button type="button" class="filters-btn">Веб-сайты</button>
             </li>
-            <li>
+            <li class="filters-list-item">
               <button type="button" class="filters-btn">Приложения</button>
             </li>
-            <li>
+            <li class="filters-list-item">
               <button type="button" class="filters-btn">Дизайн</button>
             </li>
-            <li>
+            <li class="filters-list-item">
               <button type="button" class="filters-btn">Маркетинг</button>
             </li>
           </ul>
+          <!-- END FILTERS BUTTON -->
+
+          <!-- START WORK EXAMPLES -->
           <h2 class="visually-hidden">Примеры работ</h2>
           <ul class="work-examples-list">
             <li class="work-examples-item">
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/web-site-logo.jpg"
-                      alt="Логотип сайта Технокряк"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/technokryak-desktop.webp     1x,
+                          ./images/work-examples/technokryak-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/technokryak-desktop.jpg    1x,
+                          ./images/work-examples/technokryak-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/technokryak-tablet.webp    1x,
+                          ./images/work-examples/technokryak-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/technokryak-tablet.jpg    1x,
+                          ./images/work-examples/technokryak-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/technokryak-mobile.webp    1x,
+                          ./images/work-examples/technokryak-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/technokryak-mobile.jpg    1x,
+                          ./images/work-examples/technokryak-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Логотип сайта Технокряк"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -123,12 +181,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/poster.jpg"
-                      alt="Изображение постера New Orlean vs Golden Star"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/poster-desktop.webp     1x,
+                          ./images/work-examples/poster-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/poster-desktop.jpg    1x,
+                          ./images/work-examples/poster-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/poster-tablet.webp    1x,
+                          ./images/work-examples/poster-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/poster-tablet.jpg    1x,
+                          ./images/work-examples/poster-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/poster-mobile.webp    1x,
+                          ./images/work-examples/poster-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/poster-mobile.jpg    1x,
+                          ./images/work-examples/poster-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Изображение постера New Orlean vs Golden Star"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -150,12 +260,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/seafood-logo.jpg"
-                      alt="Логотип ресторана Seafood"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/seafood-desktop.webp     1x,
+                          ./images/work-examples/seafood-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/seafood-desktop.jpg    1x,
+                          ./images/work-examples/seafood-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/seafood-tablet.webp    1x,
+                          ./images/work-examples/seafood-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/seafood-tablet.jpg    1x,
+                          ./images/work-examples/seafood-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/seafood-mobile.webp    1x,
+                          ./images/work-examples/seafood-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/seafood-mobile.jpg    1x,
+                          ./images/work-examples/seafood-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Логотип ресторана Seafood"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -176,13 +338,65 @@
             <li class="work-examples-item work-examples-link">
               <div class="work-examples-wrap">
                 <a href="" class="link">
-                  <div class="work-examples-box">
-                    <img
-                      src="images/prime-logo.jpg"
-                      alt="Логотип проекта Prime"
-                      width="370"
-                      height="294"
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        /images/work-examples/prime-desktop.webp     1x,
+                        ./images/work-examples/prime-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
                     />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/work-examples/prime-desktop.jpg    1x,
+                        ./images/work-examples/prime-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/work-examples/prime-tablet.webp    1x,
+                        ./images/work-examples/prime-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/work-examples/prime-tablet.jpg    1x,
+                        ./images/work-examples/prime-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/work-examples/prime-mobile.webp    1x,
+                        ./images/work-examples/prime-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/work-examples/prime-mobile.jpg    1x,
+                        ./images/work-examples/prime-mobile@2x.jpg 2x
+                      "
+                    />
+
+                    <img
+                      src="#"
+                      alt="Логотип проекта Prime"
+                      class="work-examples-img"
+                    />
+                  </picture>
+                  <div class="work-examples-box">
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -204,12 +418,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/boxes-logo.jpg"
-                      alt="Логотип приложения Boxes"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/boxes-desktop.webp     1x,
+                          ./images/work-examples/boxes-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/boxes-desktop.jpg    1x,
+                          ./images/work-examples/boxes-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/boxes-tablet.webp    1x,
+                          ./images/work-examples/boxes-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/boxes-tablet.jpg    1x,
+                          ./images/work-examples/boxes-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/boxes-mobile.webp    1x,
+                          ./images/work-examples/boxes-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/boxes-mobile.jpg    1x,
+                          ./images/work-examples/boxes-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Логотип приложения Boxes"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -231,12 +497,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/inspiration-has-no-borders-logo.jpg"
-                      alt="Логотип сайта Inspiration has no Borders"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/inspiration-desktop.webp     1x,
+                          ./images/work-examples/inspiration-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/inspiration-desktop.jpg    1x,
+                          ./images/work-examples/inspiration-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/inspiration-tablet.webp    1x,
+                          ./images/work-examples/inspiration-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/inspiration-tablet.jpg    1x,
+                          ./images/work-examples/inspiration-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/inspiration-mobile.webp    1x,
+                          ./images/work-examples/inspiration-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/inspiration-mobile.jpg    1x,
+                          ./images/work-examples/inspiration-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Логотип сайта Inspiration has no Borders"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -257,12 +575,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/limited-edition-logo.jpg"
-                      alt="Изображение разворота издания Limited Edition"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/limited-edition-desktop.webp     1x,
+                          ./images/work-examples/limited-edition-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/limited-edition-desktop.jpg    1x,
+                          ./images/work-examples/limited-edition-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/limited-edition-tablet.webp    1x,
+                          ./images/work-examples/limited-edition-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/limited-edition-tablet.jpg    1x,
+                          ./images/work-examples/limited-edition-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/limited-edition-mobile.webp    1x,
+                          ./images/work-examples/limited-edition-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/limited-edition-mobile.jpg    1x,
+                          ./images/work-examples/limited-edition-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Изображение разворота издания Limited Edition"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -284,12 +654,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/lab-logo.jpg"
-                      alt="Логотип проекта LAB"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/lab-desktop.webp     1x,
+                          ./images/work-examples/lab-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/lab-desktop.jpg    1x,
+                          ./images/work-examples/lab-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/lab-tablet.webp    1x,
+                          ./images/work-examples/lab-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/lab-tablet.jpg    1x,
+                          ./images/work-examples/lab-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/lab-mobile.webp    1x,
+                          ./images/work-examples/lab-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/lab-mobile.jpg    1x,
+                          ./images/work-examples/lab-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Логотип проекта LAB"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -311,12 +733,64 @@
               <div class="work-examples-wrap">
                 <a href="" class="link work-examples-link">
                   <div class="work-examples-box">
-                    <img
-                      src="images/growing-business-logo.jpg"
-                      alt="Логотип приложения Growing Business"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          /images/work-examples/growing-business-desktop.webp     1x,
+                          ./images/work-examples/growing-business-desktop@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/work-examples/growing-business-desktop.jpg    1x,
+                          ./images/work-examples/growing-business-desktop@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/growing-business-tablet.webp    1x,
+                          ./images/work-examples/growing-business-tablet@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/work-examples/growing-business-tablet.jpg    1x,
+                          ./images/work-examples/growing-business-tablet@2x.jpg 2x
+                        "
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/growing-business-mobile.webp    1x,
+                          ./images/work-examples/growing-business-mobile@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+
+                      <source
+                        media="(min-width: 480px)"
+                        srcset="
+                          ./images/work-examples/growing-business-mobile.jpg    1x,
+                          ./images/work-examples/growing-business-mobile@2x.jpg 2x
+                        "
+                      />
+
+                      <img
+                        src="#"
+                        alt="Логотип приложения Growing Business"
+                        class="work-examples-img"
+                      />
+                    </picture>
                     <p class="work-examples-picture-text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -335,6 +809,7 @@
             </li>
           </ul>
         </div>
+        <!-- END WORK EXAMPLES -->
       </section>
     </main>
     <footer class="footer">
