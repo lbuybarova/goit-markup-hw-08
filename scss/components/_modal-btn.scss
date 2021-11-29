@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 250ms var(--cubic);
+  transition: fill 250ms var(--cubic);
 
   &:hover,
   &:focus {

@@ -27,6 +27,7 @@
   border: none;
   padding: 0;
   line-height: 0;
+  justify-content: flex-end;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -36,9 +37,6 @@
   &:focus {
     fill: var(--accent-color);
   }
-}
-
-.burger-btn-icon {
 }
 
 .mobile-menu {
@@ -75,9 +73,6 @@
   &:focus {
     fill: var(--accent-color);
   }
-}
-
-.close-btn-icon {
 }
 
 .main-nav {
@@ -119,6 +114,9 @@
 
 .main-nav {
   align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
 }
 
 .header__logo {
@@ -151,7 +149,7 @@
 }
 
 .contacts-list {
-  display: block;
+  display: flex;
   margin-left: auto;
   fill: var(--accent-color);
 
