@@ -264,8 +264,8 @@
                       <source
                         media="(min-width: 1200px)"
                         srcset="
-                          /images/work-examples/seafood-desktop.webp     1x,
-                          ./images/work-examples/seafood-desktop@2x.webp 2x
+                          ../images/work-examples/seafood-desktop.webp    1x,
+                          ../images/work-examples/seafood-desktop@2x.webp 2x
                         "
                         type="image/webp"
                       />
@@ -273,16 +273,16 @@
                       <source
                         media="(min-width: 1200px)"
                         srcset="
-                          ./images/work-examples/seafood-desktop.jpg    1x,
-                          ./images/work-examples/seafood-desktop@2x.jpg 2x
+                          ../images/work-examples/seafood-desktop.jpg    1x,
+                          ../images/work-examples/seafood-desktop@2x.jpg 2x
                         "
                       />
 
                       <source
                         media="(min-width: 768px)"
                         srcset="
-                          ./images/work-examples/seafood-tablet.webp    1x,
-                          ./images/work-examples/seafood-tablet@2x.webp 2x
+                          ../images/work-examples/seafood-tablet.webp    1x,
+                          ../images/work-examples/seafood-tablet@2x.webp 2x
                         "
                         type="image/webp"
                       />
@@ -290,16 +290,16 @@
                       <source
                         media="(min-width: 768px)"
                         srcset="
-                          ./images/work-examples/seafood-tablet.jpg    1x,
-                          ./images/work-examples/seafood-tablet@2x.jpg 2x
+                          ../images/work-examples/seafood-tablet.jpg    1x,
+                          ../images/work-examples/seafood-tablet@2x.jpg 2x
                         "
                       />
 
                       <source
                         media="(min-width: 480px)"
                         srcset="
-                          ./images/work-examples/seafood-mobile.webp    1x,
-                          ./images/work-examples/seafood-mobile@2x.webp 2x
+                          ../images/work-examples/seafood-mobile.webp    1x,
+                          ../images/work-examples/seafood-mobile@2x.webp 2x
                         "
                         type="image/webp"
                       />
@@ -307,8 +307,8 @@
                       <source
                         media="(min-width: 480px)"
                         srcset="
-                          ./images/work-examples/seafood-mobile.jpg    1x,
-                          ./images/work-examples/seafood-mobile@2x.jpg 2x
+                          ../images/work-examples/seafood-mobile.jpg    1x,
+                          ../images/work-examples/seafood-mobile@2x.jpg 2x
                         "
                       />
 
@@ -812,6 +812,8 @@
         <!-- END WORK EXAMPLES -->
       </section>
     </main>
+
+    <!-- START FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
@@ -831,7 +833,7 @@
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </address>
-            <ul>
+            <ul class="footer-contacts-list">
               <li class="contacts-list-item">
                 <a href="mailto:info@devstudio.com" class="link footer-mail"
                   >info@devstudio.com</a
@@ -880,12 +882,14 @@
           <div class="sign-box">
             <p class="sign-title">Подпишитесь на рассылку</p>
             <form action="#" class="sign-form">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                class="sign-input"
-              />
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="sign-input"
+                />
+              </label>
               <button type="submit" class="sign-button">
                 Подписаться
                 <svg class="sign-icon" width="24" height="24">
@@ -897,5 +901,6 @@
         </div>
       </div>
     </footer>
+    <!-- END FOOTER -->
   </body>
 </html>
